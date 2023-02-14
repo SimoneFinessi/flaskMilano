@@ -5,13 +5,9 @@ app = Flask(__name__)
 def home():
   return render_template("home.html", Titolo='Welcome', Testo='Hello, world!')
 
-@app.route('/en')
+@app.route('/immagini')
 def hello_world():
-  return render_template("indexcss.html", Titolo='Welcome', Testo='Hello, world!')
-
-@app.route('/it')
-def ciao_mondo():
-  return render_template("indexcss.html", Titolo='Benvenuti', Testo='Ciao, mondo!')
+  return render_template("immagini.html", Titolo='Welcome', Testo='Hello, world!')
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=3245, debug=True)
