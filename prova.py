@@ -25,7 +25,7 @@ def brera():
 @app.route('/vittorio')
 def vittorio():
   x=3
-  return render_template("prova.html", Titolo='prova',testo=testo[x])
+  return render_template("prova.html", Titolo='prova',testo=testo[x],immages=immagine[x])
   
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=3245, debug=True)
